@@ -116,7 +116,7 @@ FEATURE_CONFIG = {
         "label": "❤️ Presión Arterial",
         "description": "Presión arterial diastólica (mm Hg)",
         "min": 0,
-        "max": 150,
+        "max": 250,
         "default": 80,
         "step": 1,
         "help": "",
@@ -126,7 +126,7 @@ FEATURE_CONFIG = {
         "description": "Espesor del pliegue cutáneo del tríceps (mm)",
         "min": 0,
         "max": 100,
-        "default": 1,
+        "default": 20,
         "step": 1,
         "help": "",
     },
@@ -153,7 +153,7 @@ FEATURE_CONFIG = {
         "description": "Función del pedigrí de la diabetes",
         "min": 0.00,
         "max": 200.00,
-        "default": 00.400,
+        "default": 00.40,
         "step": 0.01,
         "help": "",
     },
@@ -254,7 +254,7 @@ def create_feature_impact_chart(input_values: dict, feature_config: dict) -> go.
         "BloodPressure": 180,
         "SkinThickness": 35,
         "Insulin": 60,
-        "BMI": 40,
+        "BMI": 40.0,
         "DiabetesPedigreeFunction": 1.0,
         "Age": 50,
     }
@@ -355,7 +355,7 @@ def main():
         """
     <div class="main-header">
         <h1>🩺 Sistema de Detección de Diabetes</h1>
-        <h4>Control 1 - Modelo: LogisticRegression</h4>
+        <h4>Control 1: Modelo LogisticRegression</h4>
         <p>Machine Learning en Producción - PECD UNI</p>
     </div>
     """,
