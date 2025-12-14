@@ -331,7 +331,7 @@ def get_decision_badge(probability: float) -> tuple:
         explanation = """
         **Recomendación: Dieta Saludable y Ejercicios**
 
-        Se le recomienda una pasar consulta con el nutricionista y realizar ejercicios.
+        Se le recomienda pasar consulta con el nutricionista y realizar ejercicios.
         """
         color = "warning"
     else:
